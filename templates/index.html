@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pind</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Flood Predictor,Machine Learning,Data Visualization"
+      name="keywords"
+    />
+    <meta
+      content="Predictor is a tool that uses
+    Machine Learning and Data Visualization to show you
+    plots and Density maps with realtime flood information, as well
+    locational predictions about future floods and potential damage."
+      name="description"
+    />
+
+    <!-- Favicons -->
+    <link
+      href="{{ url_for('static', filename='img/favicon.png') }}"
+      rel="icon"
+    />
+    <link href="img/favicon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS Files -->
+    <link
+      href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/animate/animate.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}"
+      rel="stylesheet"
+    />
+    <!-- Main Stylesheet File -->
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+      <div class="container">
+        <div class="logo float-left">
+          <a href="#header" class="scrollto"
+            ><img
+              style="margin-top: -2px; min-height: 40px"
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt=""
+              class="img-fluid"
+          /></a>
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="plots.html">Plots</a></li>
+            <li><a href="densityMaps.html">Density Maps</a></li>
+            <li><a href="predicts.html">Predict Flood</a></li>
+            <!-- #<li><a href="predictsdrought.html">Predict Drought</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+      <div
+        class="container d-flex justify-content-center align-items-center h-100 text-center px-4"
+      >
+        <div>
+          <a href="#header" class="scrollto"
+            ><img
+              src="{{ url_for('static', filename='img/logo.png') }}"
+              alt=""
+              width="250px"
+              height="180px"
+            />
+          </a>
+          <h2 class="my-4">
+            Pind- An Intelligent Natural Disaster Predictor
+            that uses
+            <span>Machine Learning and Data Visualization</span> to show you
+            plots and Density maps with realtime flood information,drought information as well
+            locational predictions about future floods,droughts and potential damage.
+          </h2>
+          <a href="#about" class="scrollto btn-get-started mt-2">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <!-- #intro -->
+
+    <main id="main">
+      <!--==========================
+      About Us Section
+    ============================-->
+      <section id="about">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-5 col-md-6">
+              <div class="about-img">
+                <img
+                  src="{{ url_for('static', filename='img/image.png') }}"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6">
+              <div class="about-content">
+                <h2>About Pind</h2>
+                <h3>
+                  A web app to help users and the government prepare for and
+                  reallocate resources for natural disasters.
+                </h3>
+                <p>
+                  
+Floods and droughts are frequent and dangerous natural disasters. Floods inundate areas with water, while droughts cause extended periods of water scarcity.
+                  <!-- Floods are one of the most dangerous and frequent natural
+                  disasters in the world. -->
+                </p>
+                <p>
+                  <!-- Every year, thousands of people die from the floods and
+                  millions of people lose their homes and livelihoods. In many
+                  states around India and China's Yellow River Valley, some of
+                  the world's worst floods have killed thousands, if not
+                  millions of people. -->
+                  
+Every year, floods claim thousands of lives, displacing millions. In India and China, the Yellow River Valley witnesses devastating floods. Droughts, exacerbated by climate change and poor water management, devastate agriculture, leading to food insecurity and economic hardships for millions globally.
+                </p>
+                <p>
+                  Our team wanted to help solve this problem, so we created
+                  Pind- An Intelligent Natural Disaster Predictor to predict floods and droughts and
+                  their impact before they
+                  even happen. Then, we display this information in an
+                  interactive graphical format, making the information
+                  compelling and easy to understand for people and governments
+                  alike.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #about -->
+
+      <!--==========================
+      Services Section
+    ============================-->
+      <section id="services" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3>Services</h3>
+            <p>
+              Our website offers many services to help people plan and prepare
+              for floods and droughts, and help the government reallocate resources to those
+              most in need.
+            </p>
+          </header>
+
+          <div class="row">
+            <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box" style="height: 300px">
+                <div class="icon" style="background: #fceef3">
+                  <i
+                    class="ion-ios-analytics-outline"
+                    style="color: #ff689b"
+                  ></i>
+                </div>
+                <h4 class="title"><a href="plots.html">View Plots</a></h4>
+                <p class="description">
+                  On our website, you can view plots showing flood prediction, droughts prediction,
+                  precipitation analysis, and damage analysis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box" style="height: 300px">
+                <div class="icon" style="background: #fff0da">
+                  <i
+                    class="ion-ios-bookmarks-outline"
+                    style="color: #e98e06"
+                  ></i>
+                </div>
+                <h4 class="title"><a href="densityMaps.html">View Density maps</a></h4>
+                <p class="description">
+                  Our website also displays interactive Density maps sharing various
+                  realtime data on floods and droughts.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 wow bounceInUp"
+              data-wow-delay="0.1s"
+              data-wow-duration="1.4s"
+            >
+              <div class="box" style="height: 300px">
+                <div class="icon" style="background: #e6fdfc">
+                  <i class="ion-ios-paper-outline" style="color: #3fcdc7"></i>
+                </div>
+                <h4 class="title">
+                  <a href="predicts.html">Predict Floods and Droughts</a>
+                </h4>
+                <p class="description">
+                  Lastly, our website allows you to predict floods and droughts in realtime
+                  through our machine learning algorithm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #services -->
+
+      <!--==========================
+      Why Us Section
+    ============================-->
+      <section id="why-us" class="wow fadeIn">
+        <div class="container">
+          <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">45</span>
+              <p>
+                Percent of deaths from natural disasters
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">3</span>
+              <p>Billion people affected by floods and drought in the last 2 decades</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">118</span>
+              <p>Billion dollar in damages worldwide annually</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span data-toggle="counter-up">4.9</span>
+              <p>Million people were displaced in India in 2021.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+      <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+      <!-- <section id="faq">
+        <div class="container">
+          <header class="section-header">
+            <h3>Frequently Asked Questions</h3>
+            <p></p>
+          </header>
+
+          <ul id="faq-list" class="wow fadeInUp">
+            <li>
+              <a data-toggle="collapse" class="collapsed" href="#faq1"
+                >Inspiration <i class="ion-android-remove"></i
+              ></a>
+              <div id="faq1" class="collapse" data-parent="#faq-list">
+                <p>
+                  According to the World Resources Institute, over 80% of
+                  India's population, that is, 1.08 billion people, are at risk
+                  due to floods. Floods cause an economic loss of nearly 15
+                  Billion USD per year in India. In the recent Kerala flood
+                  tragedy, over 100 people lost their lives, and over 15,000
+                  houses and buildings were swept away in the torrential rains.
+                  These kinds of floods happen almost every single year in the
+                  flood prone areas, and cause major damage to life and
+                  property. The major cause of this is overflowing of rivers,
+                  reservoirs and other water bodies due to extensive rainfall
+                  during the monsoon season. We wanted to make a system for
+                  effective prediction of floods in India. This kind of system
+                  does not exist yet due to lack of quality data for prediction.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq2" class="collapsed"
+                >How we built it <i class="ion-android-remove"></i
+              ></a>
+              <div id="faq2" class="collapse" data-parent="#faq-list">
+                <p>
+                  <b>THE DATASET</b><br />
+                  <br />
+                  Our thesis was that we could predict floods from weather data
+                  using machine learning. For the dataset, we first scraped this
+                  website http://floodlist.com/tag/india using the python
+                  beautiful-soup 4 library. This website gave us data about past
+                  floods India.- when and where they occurred. We then used the
+                  visual crossing weather API to obtain historic weather data
+                  such as precipitation, humidity, temperature data, cloud cover
+                  etc. in those areas, and during those times. We also performed
+                  data augmentation on this, and then stored it in a .csv
+                  file.<br />
+                  <br />
+                  <b>ML MODEL</b><br />
+                  <br />
+                  Our ML model is based on python sci-kit learn library. We used
+                  pandas to generate a data-frame from the .csv file, and then
+                  tried various ML models such as Logistic regression, KNN, and
+                  Random Forester. Out of these, the Random Forester classifier
+                  gave the highest accuracy of 98.71% on the test set. We then
+                  saved our model using a .pickle file.<br />
+                  <br />
+                  <b>DATA VISUALIZATION</b><br />
+                  <br />
+                  We first obtained a dataset of the major cities and towns in
+                  India (around 200 of them) along with their latitude,
+                  longitude and population. We then got the weather forecast of
+                  each city using the weather API and ran that into our ML
+                  model. Next, we plotted the data from the ML model on a map,
+                  using plotly chart studio. The various maps represent various
+                  data such as flood prediction, precipitation and damage
+                  estimates, in the form of scatter plots, heat-maps and bubble
+                  plots. The damage estimates were calculated using the flood
+                  prediction and population.<br />
+                  <br />
+                  <b>FRONT-END</b><br />
+                  <br />
+                  Our web app is based on the flask python framework. We
+                  rendered HTML templates on top of this flask back-end, and
+                  styled it using CSS.<br />
+                  <br />
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq3" class="collapsed"
+                >Accomplishments we are proud of<i
+                  class="ion-android-remove"
+                ></i
+              ></a>
+              <div id="faq3" class="collapse" data-parent="#faq-list">
+                <p>
+                  - Creating the best dataset in existence for flood prediction
+                  in India.<br />
+                  - Making a highly effective ML model with over 98%
+                  accuracy.<br />
+                  - Making a clean-looking UI for the web app.<br />
+                  - Creating sophisticated plots for data visualization.<br />
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq4" class="collapsed"
+                >What is next for Flood Predictor<i
+                  class="ion-android-remove"
+                ></i
+              ></a>
+              <div id="faq4" class="collapse" data-parent="#faq-list">
+                <p>
+                  - Expand our web application to develop plots dynamical.<br />
+                  - Expand our web application to cover cities in countries all
+                  around the world.<br />
+                  - Expand to create an image classification model to detect
+                  signs of upcoming floods from satellite images.<br />
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+       #faq -->
+    <!-- </main> -->
+
+    <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> --> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/mobile-nav/mobile-nav.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
